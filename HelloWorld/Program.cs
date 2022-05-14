@@ -1,12 +1,13 @@
 ﻿
 namespace HelloWorld
 {
-    internal class Program
+    public class Program
     {
         static int MyMethod(int x, int y)
         {
             return x + y;
         }
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
