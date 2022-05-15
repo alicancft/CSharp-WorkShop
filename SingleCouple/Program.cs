@@ -8,11 +8,11 @@
             int sayi = Convert.ToInt32(Console.ReadLine());
             if (sayi % 2 == 0 )
             {
-                Console.WriteLine("Girdiğiniz sayı çifttir.");
+                Console.WriteLine("Girdiğiniz {0} sayısı çifttir.",sayi);
             }
             else
             {
-                Console.WriteLine("Girdiğiniz sayı tektir.");
+                Console.WriteLine("Girdiğiniz {0} sayısı tektir.",sayi);
             }
         }
     }

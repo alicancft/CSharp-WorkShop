@@ -5,9 +5,11 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{66BFB152-0C35-4DD5-8477-1604AFF15411}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsoluteValue", "AbsoluteValue\AbsoluteValue.csproj", "{2627AE51-59E3-4FB6-BB2B-C5A320BB4601}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbsoluteValue", "AbsoluteValue\AbsoluteValue.csproj", "{2627AE51-59E3-4FB6-BB2B-C5A320BB4601}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleCouple", "SingleCouple\SingleCouple.csproj", "{E66CE0E5-A87E-4E51-996F-1DE193699322}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleCouple", "SingleCouple\SingleCouple.csproj", "{E66CE0E5-A87E-4E51-996F-1DE193699322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber", "PrimeNumber\PrimeNumber.csproj", "{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E66CE0E5-A87E-4E51-996F-1DE193699322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E66CE0E5-A87E-4E51-996F-1DE193699322}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E66CE0E5-A87E-4E51-996F-1DE193699322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
