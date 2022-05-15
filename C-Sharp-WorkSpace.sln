@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfNumber", "SumOfNumber\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationInPolygons", "CalculationInPolygons\CalculationInPolygons.csproj", "{5B13E33C-A8E2-4D89-BC40-77D60A419177}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMultiplicationTable", "TheMultiplicationTable\TheMultiplicationTable.csproj", "{E205B985-9509-4F8D-8274-53303C87EDE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{5B13E33C-A8E2-4D89-BC40-77D60A419177}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B13E33C-A8E2-4D89-BC40-77D60A419177}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B13E33C-A8E2-4D89-BC40-77D60A419177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E205B985-9509-4F8D-8274-53303C87EDE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E205B985-9509-4F8D-8274-53303C87EDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E205B985-9509-4F8D-8274-53303C87EDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E205B985-9509-4F8D-8274-53303C87EDE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
