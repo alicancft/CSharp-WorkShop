@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleCouple", "SingleCoupl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber", "PrimeNumber\PrimeNumber.csproj", "{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumTwoNumber", "SumTwoNumber\SumTwoNumber.csproj", "{15B16340-F9BB-4367-AF5D-7B99B3C8F9E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B16340-F9BB-4367-AF5D-7B99B3C8F9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B16340-F9BB-4367-AF5D-7B99B3C8F9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B16340-F9BB-4367-AF5D-7B99B3C8F9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B16340-F9BB-4367-AF5D-7B99B3C8F9E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
