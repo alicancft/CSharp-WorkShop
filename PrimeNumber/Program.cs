@@ -2,13 +2,11 @@
 
 namespace PrimeNumber
 {
-    internal class Program
+    public class Program
     {
         public static bool IsPrime(int n)
         {
-            if (n == 2)
-                return true;
-            for (int i = 2; i<=n/2; i++)
+            for (int i = 2; i<n; i++)
             {
                 if (n % i == 0)
                 {
@@ -17,19 +15,21 @@ namespace PrimeNumber
             }
             return true;
         }
+        public static void PrimeUpToTheEnteredNumber(int number)
+        {
+            for (int i = 2; i <= number; i++)
+            {
+                if (IsPrime(i))
+                {
+                    Console.Write(i+ " ");
+                }
+            }
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a number =");
-                int n = Convert.ToInt32(Console.ReadLine());
-                if (IsPrime(n))
-                {
-                    Console.WriteLine("Your number is a prime number.");
-                }
-                else
-                {
-                    Console.WriteLine("Your number is not a prime number.");
-                }
-
+            int n = Convert.ToInt32(Console.ReadLine());
+            PrimeUpToTheEnteredNumber(n);
         }
     }
 }
