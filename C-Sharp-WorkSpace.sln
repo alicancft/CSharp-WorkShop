@@ -9,17 +9,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbsoluteValue", "AbsoluteVa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleCouple", "SingleCouple\SingleCouple.csproj", "{E66CE0E5-A87E-4E51-996F-1DE193699322}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber", "PrimeNumber\PrimeNumber.csproj", "{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumber", "PrimeNumber\PrimeNumber.csproj", "{7C65FDFC-FD7C-44DF-9677-8F6C11F95BFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumTwoNumber", "SumTwoNumber\SumTwoNumber.csproj", "{15B16340-F9BB-4367-AF5D-7B99B3C8F9E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumTwoNumber", "SumTwoNumber\SumTwoNumber.csproj", "{15B16340-F9BB-4367-AF5D-7B99B3C8F9E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfDigits", "SumOfDigits\SumOfDigits.csproj", "{8581DA3A-BFDE-448D-BE56-2165D4625D5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOfDigits", "SumOfDigits\SumOfDigits.csproj", "{8581DA3A-BFDE-448D-BE56-2165D4625D5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfNumber", "SumOfNumber\SumOfNumber.csproj", "{56C1B715-C5E5-4866-881C-31606C2CE944}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumOfNumber", "SumOfNumber\SumOfNumber.csproj", "{56C1B715-C5E5-4866-881C-31606C2CE944}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationInPolygons", "CalculationInPolygons\CalculationInPolygons.csproj", "{5B13E33C-A8E2-4D89-BC40-77D60A419177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculationInPolygons", "CalculationInPolygons\CalculationInPolygons.csproj", "{5B13E33C-A8E2-4D89-BC40-77D60A419177}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMultiplicationTable", "TheMultiplicationTable\TheMultiplicationTable.csproj", "{E205B985-9509-4F8D-8274-53303C87EDE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheMultiplicationTable", "TheMultiplicationTable\TheMultiplicationTable.csproj", "{E205B985-9509-4F8D-8274-53303C87EDE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{543C5FCB-8A15-4330-8970-440724C7759D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{E205B985-9509-4F8D-8274-53303C87EDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E205B985-9509-4F8D-8274-53303C87EDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E205B985-9509-4F8D-8274-53303C87EDE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543C5FCB-8A15-4330-8970-440724C7759D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543C5FCB-8A15-4330-8970-440724C7759D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543C5FCB-8A15-4330-8970-440724C7759D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543C5FCB-8A15-4330-8970-440724C7759D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
