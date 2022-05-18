@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheMultiplicationTable", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "Array\Array.csproj", "{543C5FCB-8A15-4330-8970-440724C7759D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern", "Pattern\Pattern.csproj", "{82AACECD-E74A-4CAE-9B93-5F4FC8EF4FF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern", "Pattern\Pattern.csproj", "{82AACECD-E74A-4CAE-9B93-5F4FC8EF4FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{B6C273CD-3975-46B6-85B0-54D3D29E3B79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{82AACECD-E74A-4CAE-9B93-5F4FC8EF4FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82AACECD-E74A-4CAE-9B93-5F4FC8EF4FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82AACECD-E74A-4CAE-9B93-5F4FC8EF4FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C273CD-3975-46B6-85B0-54D3D29E3B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C273CD-3975-46B6-85B0-54D3D29E3B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C273CD-3975-46B6-85B0-54D3D29E3B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C273CD-3975-46B6-85B0-54D3D29E3B79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
