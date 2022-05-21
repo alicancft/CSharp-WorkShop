@@ -4,13 +4,15 @@
     {
         static void Main(string[] args)
         {
-            int i = Convert.ToInt32(Console.ReadLine());
-            int j = Convert.ToInt32(Console.ReadLine());
-            int deger = Convert.ToInt32(Console.ReadLine());
-            int[,] degerMatrix = MatrisOlustur(i, j, deger);
-            MatrisYazdir(degerMatrix);
-            //string[,] matrix = MatrisOlustur(i,j); 
-            // MatrisYazdir(matrix);
+            int[,] kullaniciMatrix = MatrisOlustur();
+            MatrisYazdir(kullaniciMatrix);
+            // int i = Convert.ToInt32(Console.ReadLine());
+            // int j = Convert.ToInt32(Console.ReadLine());
+            //int deger = Convert.ToInt32(Console.ReadLine());
+            // int[,] degerMatrix = MatrisOlustur(i, j, deger);
+            //MatrisYazdir(degerMatrix);
+            // string[,] matrix = MatrisOlustur(i,j); 
+            //  MatrisYazdir(matrix);
         }
         public static string[,] MatrisOlustur(int a,int b)
         {
@@ -54,6 +56,24 @@
                 for (int l = 0; l < b; l++)
                 {
                     matris[k, l] = girilenDeger;
+                }
+            }
+            return matris;
+        }
+
+        public static int[,] MatrisOlustur()
+        {
+            Console.Write("Satır sayısı= ");
+            int i = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Sütun sayısı= ");
+            int j = Convert.ToInt32(Console.ReadLine());
+            int[,] matris = new int[i, j];
+            for (int k = 0; k < i; k++)
+            {
+                for (int l = 0; l < j; l++)
+                {
+                    Console.Write("Matrisin {0},{1} elemanı= ",k,l);
+                    matris[k, l] = Convert.ToInt32(Console.ReadLine());
                 }
             }
             return matris;
