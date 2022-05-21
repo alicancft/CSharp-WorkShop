@@ -6,8 +6,11 @@
         {
             int i = Convert.ToInt32(Console.ReadLine());
             int j = Convert.ToInt32(Console.ReadLine());
-            string[,] matrix = MatrisOlustur(i,j); 
-            MatrisYazdir(matrix);
+            int deger = Convert.ToInt32(Console.ReadLine());
+            int[,] degerMatrix = MatrisOlustur(i, j, deger);
+            MatrisYazdir(degerMatrix);
+            //string[,] matrix = MatrisOlustur(i,j); 
+            // MatrisYazdir(matrix);
         }
         public static string[,] MatrisOlustur(int a,int b)
         {
@@ -42,6 +45,18 @@
                 }
                 Console.WriteLine();
             }
+        }
+        public static int[,] MatrisOlustur(int a, int b,int girilenDeger)
+        {
+            int[,] matris = new int[a, b];
+            for (int k = 0; k < a; k++)
+            {
+                for (int l = 0; l < b; l++)
+                {
+                    matris[k, l] = girilenDeger;
+                }
+            }
+            return matris;
         }
     }
 }
