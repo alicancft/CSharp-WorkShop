@@ -4,10 +4,13 @@
     {
         static void Main(string[] args)
         {
-            int[,] kullaniciMatrix = MatrisOlustur();
-            MatrisYazdir(kullaniciMatrix);
-            int[,] transposeMatrix = Transpose(kullaniciMatrix);
-            MatrisYazdir(transposeMatrix);
+            int[,] aMatrix = MatrisOlustur();
+            int[,] bMatrix = MatrisOlustur();
+            IsEqual(aMatrix, bMatrix);
+            //int[,] kullaniciMatrix = MatrisOlustur();
+            //MatrisYazdir(kullaniciMatrix);
+            //int[,] transposeMatrix = Transpose(kullaniciMatrix);
+            //MatrisYazdir(transposeMatrix);
             //int[] diagonalArray=GetDiagonalArray(kullaniciMatrix);
             //MatrisYazdir(diagonalArray);
             //TraceOfMatrix(diagonalArray);
@@ -207,8 +210,37 @@
                     transposeMatris[i, j] = matris[j, i];
                 }
             }
-
             return transposeMatris;
+        }
+
+        public static void IsEqual(int[,] aMatrix, int[,] bMatrix)
+        {
+            int aMatrisSatir=aMatrix.GetLength(0);
+            int bMatrisSatir=bMatrix.GetLength(0);
+            int aMatrisSutun = aMatrix.GetLength(1);
+            int bMatrisSutun = bMatrix.GetLength(1);
+            string sonuc = "Matrisler eşittir.";
+            if (aMatrisSatir == bMatrisSatir && aMatrisSutun == bMatrisSutun)
+            {
+                for (int i = 0; i < aMatrisSatir; i++)
+                {
+                    for (int j = 0; j < bMatrisSutun; j++)
+                    {
+                        if (aMatrix[i, j] != bMatrix[i,j])
+                        {
+                            sonuc = "Eşit değildir";
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                sonuc = "Matrislerin satır sütün eşit değildir";
+
+            }
+
+            Console.WriteLine(sonuc);
         }
     }
 }
