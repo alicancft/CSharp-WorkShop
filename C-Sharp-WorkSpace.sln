@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern", "Pattern\Pattern.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factorial", "Factorial\Factorial.csproj", "{B6C273CD-3975-46B6-85B0-54D3D29E3B79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryToDesimal", "BinaryToDesimal\BinaryToDesimal.csproj", "{7A38974D-7A1C-41DA-AB16-2EEF95C52513}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinaryToDesimal", "BinaryToDesimal\BinaryToDesimal.csproj", "{7A38974D-7A1C-41DA-AB16-2EEF95C52513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{19CEE31E-89C6-41D3-8AF2-510DC69CFC4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{7A38974D-7A1C-41DA-AB16-2EEF95C52513}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A38974D-7A1C-41DA-AB16-2EEF95C52513}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A38974D-7A1C-41DA-AB16-2EEF95C52513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CEE31E-89C6-41D3-8AF2-510DC69CFC4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CEE31E-89C6-41D3-8AF2-510DC69CFC4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CEE31E-89C6-41D3-8AF2-510DC69CFC4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CEE31E-89C6-41D3-8AF2-510DC69CFC4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
