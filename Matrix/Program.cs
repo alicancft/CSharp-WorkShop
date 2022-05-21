@@ -6,7 +6,8 @@
         {
             int[,] kullaniciMatrix = MatrisOlustur();
             MatrisYazdir(kullaniciMatrix);
-            IsDiagonal(kullaniciMatrix);
+            //IsDiagonal(kullaniciMatrix);
+            IsScaler(kullaniciMatrix);
             // int i = Convert.ToInt32(Console.ReadLine());
             // int j = Convert.ToInt32(Console.ReadLine());
             //int deger = Convert.ToInt32(Console.ReadLine());
@@ -91,6 +92,23 @@
                     if ((i==j && isDiagonal[i,j]==0) || (i != j && isDiagonal[i, j] != 0))
                     {
                         sonuc = "Diagonal matris değidir.";
+                        break;
+                    }
+                }
+            }
+            Console.WriteLine(sonuc);
+        }
+        public static void IsScaler(int[,] isScaler)
+        {
+            string sonuc = "Scaler matristir.";
+            int kontrol = isScaler[0, 0];
+            for (int i = 0; i < isScaler.GetLength(0); i++)
+            {
+                for (int j = 0; j < isScaler.GetLength(1); j++)
+                {
+                    if ((i==j && (isScaler[i,j]!=kontrol || kontrol==0))||((i != j && (isScaler[i, j] != 0 || kontrol == 0))))
+                    {
+                        sonuc = "Scaler matris değidir.";
                         break;
                     }
                 }
