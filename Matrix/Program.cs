@@ -6,7 +6,9 @@
         {
             int[,] kullaniciMatrix = MatrisOlustur();
             MatrisYazdir(kullaniciMatrix);
-            GetDiagonalArray(kullaniciMatrix);
+            int[] diagonalArray=GetDiagonalArray(kullaniciMatrix);
+            MatrisYazdir(diagonalArray);
+            TraceOfMatrix(diagonalArray);
             //IsDiagonal(kullaniciMatrix);
             //IsScaler(kullaniciMatrix);
             //IsIdentity(kullaniciMatrix);
@@ -19,9 +21,9 @@
             // string[,] matrix = MatrisOlustur(i,j); 
             //  MatrisYazdir(matrix);
         }
-        public static string[,] MatrisOlustur(int a,int b)
+        public static string[,] MatrisOlustur(int a, int b)
         {
-            string[,] matris= new string[a,b];
+            string[,] matris = new string[a, b];
             for (int k = 0; k < a; k++)
             {
                 for (int l = 0; l < b; l++)
@@ -37,7 +39,7 @@
             {
                 for (int j = 0; j < matriss.GetLength(1); j++)
                 {
-                    Console.Write(matriss[i,j]+" ");
+                    Console.Write(matriss[i, j] + " ");
                 }
                 Console.WriteLine();
             }
@@ -53,7 +55,18 @@
                 Console.WriteLine();
             }
         }
-        public static int[,] MatrisOlustur(int a, int b,int girilenDeger)
+        public static void MatrisYazdir(int[] matriss)
+        {
+            foreach (int gez in matriss)
+            {
+                Console.Write(gez + " ");
+            }
+            //for (int i = 0; i < matriss.Length; i++)
+            //{
+            //    Console.Write(matriss[i]+" ");
+            //}
+        }
+        public static int[,] MatrisOlustur(int a, int b, int girilenDeger)
         {
             int[,] matris = new int[a, b];
             for (int k = 0; k < a; k++)
@@ -78,7 +91,7 @@
             {
                 for (int l = 0; l < j; l++)
                 {
-                    Console.Write("Matrisin {0},{1} elemanı= ",k,l);
+                    Console.Write("Matrisin {0},{1} elemanı= ", k, l);
                     matris[k, l] = Convert.ToInt32(Console.ReadLine());
                 }
             }
@@ -92,7 +105,7 @@
             {
                 for (int j = 0; j < isDiagonal.GetLength(1); j++)
                 {
-                    if ((i==j && isDiagonal[i,j]==0) || (i != j && isDiagonal[i, j] != 0))
+                    if ((i == j && isDiagonal[i, j] == 0) || (i != j && isDiagonal[i, j] != 0))
                     {
                         sonuc = "Diagonal matris değidir.";
                         break;
@@ -109,7 +122,7 @@
             {
                 for (int j = 0; j < isScaler.GetLength(1); j++)
                 {
-                    if ((i==j && (isScaler[i,j]!=kontrol || kontrol==0))||((i != j && (isScaler[i, j] != 0 || kontrol == 0))))
+                    if ((i == j && (isScaler[i, j] != kontrol || kontrol == 0)) || ((i != j && (isScaler[i, j] != 0 || kontrol == 0))))
                     {
                         sonuc = "Scaler matris değidir.";
                         break;
@@ -125,7 +138,7 @@
             {
                 for (int j = 0; j < isIdentity.GetLength(1); j++)
                 {
-                    if ((i==j && isIdentity[i,j]!=1) || (i!=j && isIdentity[i,j]!=0))
+                    if ((i == j && isIdentity[i, j] != 1) || (i != j && isIdentity[i, j] != 0))
                     {
                         sonuc = "Birim matris değildir.";
                         break;
@@ -134,31 +147,33 @@
             }
             Console.WriteLine(sonuc);
         }
-        public static void GetDiagonalArray(int[,] diagonaller)
+        public static int[] GetDiagonalArray(int[,] matriss)
         {
-            int[] matris = new int[diagonaller.GetLength(0)];
+            int[] diagonalList = new int[matriss.GetLength(0)];
             int eleman = 0;
-            for (int k = 0; k < diagonaller.GetLength(0); k++)
+            for (int k = 0; k < matriss.GetLength(0); k++)
             {
-                for (int l = 0; l < diagonaller.GetLength(1); l++)
+                for (int l = 0; l < matriss.GetLength(1); l++)
                 {
-                    if (k==l)
+                    if (k == l)
                     {
-                        matris[eleman] = diagonaller[k,l];
+                        diagonalList[eleman] = matriss[k, l];
                         eleman++;
                     }
                 }
             }
+            return diagonalList;
+        }
 
-            foreach (int gez in matris)
+        public static void TraceOfMatrix(int[] matris)
+        {
+            int toplam = 0;
+            for (int i = 0; i < matris.Length; i++)
             {
-                Console.Write(gez+" ");
+                toplam += matris[i];
             }
-
-            //for (int i = 0; i < matris.Length; i++)
-            //{
-            //    Console.Write(matris[i]+" ");
-            //}
+            Console.WriteLine();
+            Console.WriteLine(toplam);
         }
     }
 }
