@@ -7,7 +7,8 @@
             int[,] kullaniciMatrix = MatrisOlustur();
             MatrisYazdir(kullaniciMatrix);
             //IsDiagonal(kullaniciMatrix);
-            IsScaler(kullaniciMatrix);
+            //IsScaler(kullaniciMatrix);
+            IsIdentity(kullaniciMatrix);
             // int i = Convert.ToInt32(Console.ReadLine());
             // int j = Convert.ToInt32(Console.ReadLine());
             //int deger = Convert.ToInt32(Console.ReadLine());
@@ -114,6 +115,22 @@
                 }
             }
             Console.WriteLine(sonuc);
+        }
+        public static void IsIdentity(int[,] isIdentity)
+        {
+            string sonuc = "Birim matristir.";
+            for (int i = 0; i < isIdentity.GetLength(0); i++)
+            {
+                for (int j = 0; j < isIdentity.GetLength(1); j++)
+                {
+                    if ((i==j && isIdentity[i,j]!=1) || (i!=j && isIdentity[i,j]!=0))
+                    {
+                        sonuc = "Birim matris değildir.";
+                        break;
+                    }
+                }
+            }
+           Console.WriteLine(sonuc);
         }
     }
 }
