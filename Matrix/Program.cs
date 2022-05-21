@@ -6,6 +6,7 @@
         {
             int[,] kullaniciMatrix = MatrisOlustur();
             MatrisYazdir(kullaniciMatrix);
+            IsDiagonal(kullaniciMatrix);
             // int i = Convert.ToInt32(Console.ReadLine());
             // int j = Convert.ToInt32(Console.ReadLine());
             //int deger = Convert.ToInt32(Console.ReadLine());
@@ -67,6 +68,7 @@
             int i = Convert.ToInt32(Console.ReadLine());
             Console.Write("Sütun sayısı= ");
             int j = Convert.ToInt32(Console.ReadLine());
+
             int[,] matris = new int[i, j];
             for (int k = 0; k < i; k++)
             {
@@ -77,6 +79,23 @@
                 }
             }
             return matris;
+        }
+
+        public static void IsDiagonal(int[,] isDiagonal)
+        {
+            string sonuc = "Diagonal matristir.";
+            for (int i = 0; i < isDiagonal.GetLength(0); i++)
+            {
+                for (int j = 0; j < isDiagonal.GetLength(1); j++)
+                {
+                    if ((i==j && isDiagonal[i,j]==0) || (i != j && isDiagonal[i, j] != 0))
+                    {
+                        sonuc = "Diagonal matris değidir.";
+                        break;
+                    }
+                }
+            }
+            Console.WriteLine(sonuc);
         }
     }
 }
