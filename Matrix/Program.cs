@@ -4,11 +4,14 @@
     {
         static void Main(string[] args)
         {
-            int[,] aMatrix = MatrisOlustur();
-            int[,] bMatrix = MatrisOlustur();
-            IsEqual(aMatrix, bMatrix);
-            //int[,] kullaniciMatrix = MatrisOlustur();
-            //MatrisYazdir(kullaniciMatrix);
+            //int[,] aMatrix = MatrisOlustur();
+            //int[,] bMatrix = MatrisOlustur();
+            //IsEqual(aMatrix, bMatrix);
+            int[,] kullaniciMatrix = MatrisOlustur();
+            MatrisYazdir(kullaniciMatrix);
+            int[,] scalerMatris = ScalerCarpim(kullaniciMatrix);
+            MatrisYazdir(scalerMatris);
+            //Determinant(kullaniciMatrix);
             //int[,] transposeMatrix = Transpose(kullaniciMatrix);
             //MatrisYazdir(transposeMatrix);
             //int[] diagonalArray=GetDiagonalArray(kullaniciMatrix);
@@ -239,8 +242,44 @@
                 sonuc = "Matrislerin satır sütün eşit değildir";
 
             }
-
             Console.WriteLine(sonuc);
+        }
+        public static void Determinant(int[,]matris)
+        {
+            int diagonalcarpim = 1;
+            int tersdiagonalcarpim = 1;
+            for (int i = 0; i < matris.GetLength(0); i++)
+            {
+                for (int j = 0; j < matris.GetLength(1); j++)
+                {
+                    if (i==j)
+                    {
+                        diagonalcarpim*=matris[i,j];
+                    }
+                    else
+                    {
+                        tersdiagonalcarpim *= matris[i, j];
+                    }
+                }
+            }
+            Console.WriteLine(Math.Abs(diagonalcarpim-tersdiagonalcarpim));
+        }
+
+        public static int[,] ScalerCarpim(int[,] matris)
+        {
+            Console.Write("Çarpım değeriniz= ");
+            int carpim = Convert.ToInt32(Console.ReadLine());
+            int satirSayisi = matris.GetLength(0);
+            int sutunSayisi=matris.GetLength(1);
+            int[,] scalerMatris = new int[satirSayisi, sutunSayisi];
+            for (int i = 0; i < satirSayisi; i++)
+            {
+                for (int j = 0; j < sutunSayisi; j++)
+                {
+                    scalerMatris[i, j] = carpim * matris[i, j];
+                }
+            }
+            return scalerMatris;
         }
     }
 }
