@@ -6,11 +6,13 @@
         {
             int[,] kullaniciMatrix = MatrisOlustur();
             MatrisYazdir(kullaniciMatrix);
+            GetDiagonalArray(kullaniciMatrix);
             //IsDiagonal(kullaniciMatrix);
             //IsScaler(kullaniciMatrix);
-            IsIdentity(kullaniciMatrix);
-            // int i = Convert.ToInt32(Console.ReadLine());
-            // int j = Convert.ToInt32(Console.ReadLine());
+            //IsIdentity(kullaniciMatrix);
+
+            //int i = Convert.ToInt32(Console.ReadLine());
+            //int j = Convert.ToInt32(Console.ReadLine());
             //int deger = Convert.ToInt32(Console.ReadLine());
             // int[,] degerMatrix = MatrisOlustur(i, j, deger);
             //MatrisYazdir(degerMatrix);
@@ -130,7 +132,33 @@
                     }
                 }
             }
-           Console.WriteLine(sonuc);
+            Console.WriteLine(sonuc);
+        }
+        public static void GetDiagonalArray(int[,] diagonaller)
+        {
+            int[] matris = new int[diagonaller.GetLength(0)];
+            int eleman = 0;
+            for (int k = 0; k < diagonaller.GetLength(0); k++)
+            {
+                for (int l = 0; l < diagonaller.GetLength(1); l++)
+                {
+                    if (k==l)
+                    {
+                        matris[eleman] = diagonaller[k,l];
+                        eleman++;
+                    }
+                }
+            }
+
+            foreach (int gez in matris)
+            {
+                Console.Write(gez+" ");
+            }
+
+            //for (int i = 0; i < matris.Length; i++)
+            //{
+            //    Console.Write(matris[i]+" ");
+            //}
         }
     }
 }
