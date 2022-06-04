@@ -9,13 +9,15 @@
             //IsEqual(aMatrix, bMatrix);
             int[,] kullaniciMatrix = MatrisOlustur();
             MatrisYazdir(kullaniciMatrix);
-            Toplam(kullaniciMatrix);
+            SarrusKurali(kullaniciMatrix);
+
+            //Toplam(kullaniciMatrix);
             //int[,] scalerMatris = ScalerCarpim(kullaniciMatrix);
             //MatrisYazdir(scalerMatris);
 
             //Determinant(kullaniciMatrix);
-            //int[,] transposeMatrix = Transpose(kullaniciMatrix);
 
+            //int[,] transposeMatrix = Transpose(kullaniciMatrix);
             //MatrisYazdir(transposeMatrix);
 
             //int[] diagonalArray=GetDiagonalArray(kullaniciMatrix);
@@ -44,7 +46,6 @@
                     matris[k, l] = k + "," + l;
                 }
             }
-
             return matris;
         }
 
@@ -134,7 +135,6 @@
                     }
                 }
             }
-
             Console.WriteLine(sonuc);
         }
 
@@ -297,5 +297,21 @@
             }
             Console.WriteLine(toplama);
         }
+
+        public static void SarrusKurali(int[,] matris)
+        {
+            int sarrus = 0;
+            for (int i = 0; i < matris.GetLength(0); i++)
+            {
+                for (int j = 0; j < matris.GetLength(1); j++)
+                {
+                    sarrus=(((matris[0, 0]* matris[1, 1]* matris[2, 2])+( matris[0, 1]* matris[1, 2]* matris[2, 0])+ (matris[0, 2]* matris[1, 0]* matris[2, 1]))-((
+                        matris[0, 2]* matris[1, 1]* matris[2, 0])+( matris[0, 0]* matris[1, 2]* matris[2, 1])+ (matris[0, 1]* matris[1, 0]* matris[2, 2])));
+                }
+            }
+            Console.WriteLine(sarrus);
+           
+        }
+        
     }
 }
