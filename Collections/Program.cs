@@ -15,13 +15,23 @@ namespace Collections
             //{
             //    Console.WriteLine(VARIABLE);
             //}
-            List<string> cities = new List<string>();
-            cities.Add("Ankara");
-            cities.Add("İzmir");
-            var count = cities.Count; //eleman sayısı
-            Console.WriteLine(count);
-            var index = cities.IndexOf(1);
-               Console.WriteLine(index);
+            //List<string> cities = new List<string>();
+            //cities.Add("Ankara");
+            //cities.Add("İzmir");
+            //var count = cities.Count; //eleman sayısı
+            //Console.WriteLine(count);
+            Dictionary<string,string> dictionary=new Dictionary<string,string>();
+            dictionary.Add("book","kitap");
+            dictionary.Add("table","tablo");
+            dictionary.Add("computer","bilgisayar");
+
+            Console.WriteLine(dictionary["table"]);
+            Console.WriteLine(dictionary["computer"]);
+            foreach (var items in dictionary)
+            {
+                Console.WriteLine(items.Value);
+            }
+
         }
     }
 }
